@@ -1,13 +1,27 @@
 <template>
 <div class="home">
-  xxx
+  <top-view></top-view>
+  <sales-view></sales-view>
+  <map-view></map-view>
+  <bottom-view></bottom-view>
 </div>
 </template>
 
 <script>
+import TopView from "../components/TopView/index";
+import SalesView from "../components/SalesView/index";
+import MapView from "../components/MapView/index";
+import BottomView from "../components/BottomView/index";
+
 export default {
-  name: 'Home',
-}
+  name: "Home",
+  components: {
+    TopView,
+    SalesView,
+    MapView,
+    BottomView,
+  },
+};
 </script>
 
 <style lang="scss">
