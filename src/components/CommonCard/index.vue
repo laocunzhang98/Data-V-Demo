@@ -33,6 +33,7 @@ export default {
 }
 .chart {
   height: 50px;
+  margin-bottom: 5px;
 }
 .line {
   margin: 10x 0;
@@ -41,6 +42,7 @@ export default {
 .total {
   color: #666;
   font-size: 12px;
+  margin-top: 5px;
 }
 </style>
 <style lang="scss">
