@@ -1,7 +1,7 @@
 <template>
   <common-card title="累计用户数" value="1,081,014">
     <template>
-      <div id="total-users-chart"></div>
+      <v-chart :options="getOptions()"></v-chart>
     </template>
     <template v-slot:footer>
       <div class="total-user-footer">
@@ -22,12 +22,11 @@ import commonCardMixin from "../../mixins/commonCardMixin";
 export default {
   mixins: [commonCardMixin],
   mounted() {
-    const chartDom = document.getElementById("total-users-chart");
     
-    if (chartDom) {
-      console.log(chartDom);
-      const chart = this.$echarts.init(chartDom);
-      chart.setOption({
+  },
+  methods: {
+    getOptions(){
+      return{
         grid: {
           top: 0,
           bottom: 0,
@@ -103,10 +102,9 @@ export default {
             }
           },
         ],
-      });
+      }
     }
   },
-  methods: {},
 };
 </script>
 

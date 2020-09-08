@@ -3,7 +3,7 @@
     <common-card title="累计订单量" value="1,212,002">
       <template>
         <v-chart :options="getOptions()"></v-chart>
-        <div id="total-order-chart" ref="chart"></div>
+        <!-- <div id="total-order-chart" ref="chart"></div> -->
       </template>
       <template v-slot:footer>
         <span>昨日订单量</span>
@@ -17,11 +17,7 @@ import commonCardMixin from "../../mixins/commonCardMixin.js";
 export default {
   mixins: [commonCardMixin],
   mounted() {
-    const chartDom = document.getElementById("total-order-chart");
-    if (chartDom) {
-      const chart = this.$echarts.init(chartDom);
-      chart.setOption({});
-    }
+    
     // const chart = this.$echarts.init(chartDom,"light",{renderer:'svg'})
   },
   methods: {
