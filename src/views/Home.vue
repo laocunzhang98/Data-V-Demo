@@ -2,8 +2,9 @@
 <div class="home">
   <top-view></top-view>
   <sales-view></sales-view>
-  <map-view></map-view>
   <bottom-view></bottom-view>
+  <map-view></map-view>
+  
 </div>
 </template>
 
