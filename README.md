@@ -120,7 +120,7 @@ const chartDom = document.getElementById("today-users-chart");
 ```
 
 ### 4.累计用户数
-![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/累计用户数.png)
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/用户数.png)
 - 两个重叠横向柱状图
 
   ```javascript
