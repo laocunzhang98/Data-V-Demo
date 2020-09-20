@@ -30,12 +30,14 @@ Vue.use(Pagination)
 ```
 
 ### 1.累计销售额
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/累计销售额.png)
 
 - 引入CommonCard
 
 - css创建上三角与下三角
 
 ### 2.累计订单量
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/累计订单量.png)
 
 - 引入vue-echarts  
 
@@ -103,6 +105,7 @@ getOptions() {
 ```
 
 ### 3.今日用户交易量
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/今日用户交易量.png)
 
 - 使用echarts原生方法 可以同（2.累计订单量）对比
 
@@ -117,7 +120,7 @@ const chartDom = document.getElementById("today-users-chart");
 ```
 
 ### 4.累计用户数
-
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/累计用户数.png)
 - 两个重叠横向柱状图
 
   ```javascript
@@ -190,6 +193,7 @@ const chartDom = document.getElementById("today-users-chart");
   ```
 
 ### 5.销售额
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/销售额.png)
 
 - el-menu el-radio-group 的配置
 
@@ -287,7 +291,7 @@ const chartDom = document.getElementById("today-users-chart");
   ```
 
 ### 6.关键词搜索
-
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/关键词搜索.png)
 ```javascript
 searchUserOption: {
         xAxis: {
@@ -325,6 +329,7 @@ searchUserOption: {
 - el-table 实现表格展示
 
 ### 7.分类销售排行
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/分类销售排行.png)
 
 - echarts饼图的应用
 
@@ -410,6 +415,7 @@ searchUserOption: {
   ```
 
 ### 8.地图销售数据大盘
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/销售大盘.png)
 
 - 下载并安装v-charts插件
 
@@ -467,6 +473,7 @@ searchUserOption: {
   
 
 ### 9.水球图
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/水球图.png)
 
 - echarts官方并未给我们提供水球图 我们需要下载vue-liquidfill插件
 
@@ -555,7 +562,7 @@ searchUserOption: {
   ```
 
 ### 10.词云图
-
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/词云图.png)
 - echarts官方并未给我们提供水球图 我们需要下载vue-wordcloud插件
 
 - 词云图源码实现同水球图相似
