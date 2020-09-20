@@ -1,5 +1,6 @@
 # canteen-datav开发回顾
 
+![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/dataV.png)
 ## 基于vue-cli 脚手架搭建项目 划分目录结构
 
 ### 按需引入element-UI 创建card通用组件CommonCard
@@ -593,5 +594,34 @@ searchUserOption: {
       }
   ```
 
-  
+  ### 通过axios实现接口调用
 
+  ```javascript
+  // request.js
+  import axios from 'axios'
+  
+  const service = axios.create({
+    baseURL: 'https://ww.learn.cn',
+    timeout: 5000
+  })
+  // 拦截器
+  service.interceptors.response.use(
+    response => {
+      if (response.status === 200 && response.data) {
+        console.log(response.data)
+        return response.data
+      } else {
+        return Promise.reject(new Error('请求失败'))
+      }
+    },
+    error => {
+      return Promise.reject(error)
+    }
+  )
+  ```
+
+### 处理数据的几种方式
+
+- 由于组件化的开发方式 我们需要多层props传递数据 
+- 我们还可以使用vuex实现数据存储
+- 我们还可以使用provide  reject
