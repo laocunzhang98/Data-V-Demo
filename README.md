@@ -1,6 +1,7 @@
 # canteen-datav开发回顾
 
 ![image](https://github.com/laocunzhang98/Data-V-Demo/blob/master/image/dataV.png)
+https://laocunzhang98.github.io/Data-V-Demo/dist/index.html#/
 ## 基于vue-cli 脚手架搭建项目 划分目录结构
 
 ### 按需引入element-UI 创建card通用组件CommonCard
